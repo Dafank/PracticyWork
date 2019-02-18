@@ -1,0 +1,55 @@
+﻿CREATE DATABASE LibraryDB
+ON
+(
+NAME = 'LibraryDB',
+FILENAME = 'H:\PracticeDB\LibraryDB.mdf',
+SIZE = 10 MB,
+MAXSIZE = 100 MB,
+FILEGROWTH = 10 MB
+)
+LOG ON
+(
+NAME = 'LibraryDBLog',
+FILENAME = 'H:\PracticeDB\LibraryDBLog.ldf',
+SIZE = 5 MB,
+MAXSIZE = 50 MB,
+FILEGROWTH = 5 MB
+)
+
+USE LibraryDB
+CREATE TABLE AutentnData (
+  SecureID INT PRIMARY KEY IDENTITY
+ ,Email VARCHAR(50) CHECK (Email LIKE '%_@__%.__%')
+ ,Password VARCHAR(30) NOT NULL
+ ,UNIQUE (Password)
+ ,UNIQUE (Email)
+ ,
+)
+
+
+CREATE TABLE UserInfo (
+  UserID INT PRIMARY KEY IDENTITY
+ ,Lname NVARCHAR(30) NOT NULL
+ ,FName NVARCHAR(30) NOT NULL
+ ,MName NVARCHAR(30) NOT NULL
+ ,Balance MONEY NULL
+ ,SecureID INT FOREIGN KEY REFERENCES AutentnData (SecureID) UNIQUE
+ ,
+)
+
+CREATE TABLE Book (
+  BookID INT PRIMARY KEY IDENTITY
+ ,BookName NVARCHAR(100) NOT NULL
+ ,Cost MONEY NOT NULL CHECK (Cost >= 20.00)
+ ,PageAmount SMALLINT NOT NULL CHECK (PageAmount > 10)
+ ,DateReturn DATE NULL
+ ,DateBorrow DATE NULL
+ ,Year SMALLINT NOT NULL CHECK (Year LIKE '____' AND Year <= 2019)
+)
+
+CREATE TABLE Library (
+  OperationID INT PRIMARY KEY IDENTITY
+ ,BookID INT FOREIGN KEY REFERENCES Book (BookID)
+ ,BookOwner INT FOREIGN KEY REFERENCES UserInfo (UserID)
+  UNIQUE (BookID, BookOwner)
+)
