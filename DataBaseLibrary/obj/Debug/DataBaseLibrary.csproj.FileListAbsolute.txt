@@ -1,0 +1,12 @@
+D:\PracticeWork\DataBaseLibrary\bin\Debug\DataBaseLibrary.dll.config
+D:\PracticeWork\DataBaseLibrary\bin\Debug\DataBaseLibrary.dll
+D:\PracticeWork\DataBaseLibrary\bin\Debug\DataBaseLibrary.pdb
+D:\PracticeWork\DataBaseLibrary\bin\Debug\EntityFramework.dll
+D:\PracticeWork\DataBaseLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\PracticeWork\DataBaseLibrary\bin\Debug\EntityFramework.xml
+D:\PracticeWork\DataBaseLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\PracticeWork\DataBaseLibrary\obj\Debug\DataBaseLibrary.csprojAssemblyReference.cache
+D:\PracticeWork\DataBaseLibrary\obj\Debug\DataBaseLibrary.csproj.CoreCompileInputs.cache
+D:\PracticeWork\DataBaseLibrary\obj\Debug\DataBaseLibrary.csproj.CopyComplete
+D:\PracticeWork\DataBaseLibrary\obj\Debug\DataBaseLibrary.dll
+D:\PracticeWork\DataBaseLibrary\obj\Debug\DataBaseLibrary.pdb
