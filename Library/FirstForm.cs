@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DataBaseLibrary;
 
 namespace Library
 {
@@ -23,6 +22,13 @@ namespace Library
             Login login = new Login(this);
             login.Show();
             this.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Registration registration = new Registration(this);
+            registration.Show();
+            this.Visible =false;
         }
     }
 }

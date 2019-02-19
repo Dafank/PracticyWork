@@ -1,14 +1,10 @@
 D:\PracticeWork\Library\bin\Debug\Library.exe.config
 D:\PracticeWork\Library\bin\Debug\Library.exe
 D:\PracticeWork\Library\bin\Debug\Library.pdb
-D:\PracticeWork\Library\bin\Debug\DataBaseLibrary.dll
 D:\PracticeWork\Library\bin\Debug\EntityFramework.dll
 D:\PracticeWork\Library\bin\Debug\EntityFramework.SqlServer.dll
-D:\PracticeWork\Library\bin\Debug\DataBaseLibrary.pdb
-D:\PracticeWork\Library\bin\Debug\DataBaseLibrary.dll.config
 D:\PracticeWork\Library\bin\Debug\EntityFramework.xml
 D:\PracticeWork\Library\bin\Debug\EntityFramework.SqlServer.xml
-D:\PracticeWork\Library\obj\Debug\Library.csprojAssemblyReference.cache
 D:\PracticeWork\Library\obj\Debug\Library.Properties.Resources.resources
 D:\PracticeWork\Library\obj\Debug\Library.csproj.GenerateResource.cache
 D:\PracticeWork\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
@@ -17,3 +13,8 @@ D:\PracticeWork\Library\obj\Debug\Library.exe
 D:\PracticeWork\Library\obj\Debug\Library.pdb
 D:\PracticeWork\Library\obj\Debug\Library.FirstForm.resources
 D:\PracticeWork\Library\obj\Debug\Library.Login.resources
+D:\PracticeWork\Library\obj\Debug\Library.csprojAssemblyReference.cache
+D:\PracticeWork\Library\bin\Debug\DataBaseLibrary.dll
+D:\PracticeWork\Library\bin\Debug\DataBaseLibrary.pdb
+D:\PracticeWork\Library\bin\Debug\DataBaseLibrary.dll.config
+D:\PracticeWork\Library\obj\Debug\Library.Registration.resources

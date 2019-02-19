@@ -20,7 +20,7 @@ namespace DataBaseLibrary
 
         [Required]
         [StringLength(30)]
-        public string Lname { get; set; }
+        public string LName { get; set; }
 
         [Required]
         [StringLength(30)]
@@ -33,6 +33,7 @@ namespace DataBaseLibrary
         [Column(TypeName = "money")]
         public decimal? Balance { get; set; }
 
+        [Required]
         public int SecureID { get; set; }
 
         public virtual AutentnData AutentnData { get; set; }

@@ -10,10 +10,13 @@ namespace DataBaseLibrary
     public partial class Library
     {
         [Key]
+        [Required]
         public int OperationID { get; set; }
 
+        [Required]
         public int BookID { get; set; }
 
+        [Required]
         public int BookOwner { get; set; }
 
         public virtual Book Book { get; set; }

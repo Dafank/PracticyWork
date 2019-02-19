@@ -21,9 +21,11 @@ namespace DataBaseLibrary
         [StringLength(100)]
         public string BookName { get; set; }
 
+        [Required]
         [Column(TypeName = "money")]
         public decimal Cost { get; set; }
 
+        [Required]
         public short PageAmount { get; set; }
 
         [Column(TypeName = "date")]
@@ -32,6 +34,7 @@ namespace DataBaseLibrary
         [Column(TypeName = "date")]
         public DateTime? DateBorrow { get; set; }
 
+        [Required]
         public short Year { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

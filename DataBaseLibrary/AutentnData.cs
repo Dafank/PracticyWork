@@ -5,7 +5,6 @@ namespace DataBaseLibrary
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
-    using System.Net.Mail;
 
     [Table("AutentnData")]
     public partial class AutentnData
@@ -16,9 +15,6 @@ namespace DataBaseLibrary
             UserInfoes = new HashSet<UserInfo>();
         }
 
-        public static EventHandler<string> eror;
-        private string email;
-
         [Key]
         public int SecureID { get; set; }
 
@@ -26,25 +22,7 @@ namespace DataBaseLibrary
         [StringLength(50)]
         public string Email
         {
-            set
-            {
-                try
-                {
-                    MailAddress mail = new MailAddress(value);
-                }
-                catch (FormatException)
-                {
-                    eror.Invoke(this, "email");
-                }
-                finally
-                {
-                    email = value;
-                }
-            }
-            get
-            {
-                return email;
-            }
+            get;set;
         }
 
         [Required]
