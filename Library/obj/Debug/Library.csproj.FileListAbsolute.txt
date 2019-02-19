@@ -1,10 +1,11 @@
-D:\PracticeWork\Library\bin\Debug\LibraryDB.mdf
-D:\PracticeWork\Library\bin\Debug\LibraryDB_log.ldf
 D:\PracticeWork\Library\bin\Debug\Library.exe.config
 D:\PracticeWork\Library\bin\Debug\Library.exe
 D:\PracticeWork\Library\bin\Debug\Library.pdb
+D:\PracticeWork\Library\bin\Debug\DataBaseLibrary.dll
 D:\PracticeWork\Library\bin\Debug\EntityFramework.dll
 D:\PracticeWork\Library\bin\Debug\EntityFramework.SqlServer.dll
+D:\PracticeWork\Library\bin\Debug\DataBaseLibrary.pdb
+D:\PracticeWork\Library\bin\Debug\DataBaseLibrary.dll.config
 D:\PracticeWork\Library\bin\Debug\EntityFramework.xml
 D:\PracticeWork\Library\bin\Debug\EntityFramework.SqlServer.xml
 D:\PracticeWork\Library\obj\Debug\Library.csprojAssemblyReference.cache

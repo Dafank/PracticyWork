@@ -7,27 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataBaseLibrary;
 
 namespace Library
 {
     public partial class Form1 : Form
     {
-        LibraryModel Library;
+        DataBaseModel db;
         public Form1()
         {
-            Library = new LibraryModel();
+            db = new DataBaseModel();
             InitializeComponent();
             Operation();
         }
 
-        public void Operation()
+        void Operation()
         {
-            Library.Books.Add(new Book {BookID = 1,BookName = "Хело браза",Cost = 30.21m,PageAmount = 300,Year = 2018});
+            db.Books.Add(new Book { BookName = "AWS", Cost = 30, PageAmount = 300, Year = 2013 });
+            db.SaveChanges();
             StringBuilder builder = new StringBuilder();
-            foreach (var item in Library.Books)
+
+            foreach (var item in db.Books)
             {
-                builder.Append($"{item.BookName}\n {item.Cost}\n {item.PageAmount}\n {item.Year}");
+                builder.Append($"{item.BookName} {item.Cost}\n {item.PageAmount} {item.Year}");
             }
+
             MessageBox.Show(builder.ToString());
         }
     }
