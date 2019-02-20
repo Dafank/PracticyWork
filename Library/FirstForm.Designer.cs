@@ -35,7 +35,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(65, 32);
+            this.button1.Location = new System.Drawing.Point(66, 32);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(240, 40);
@@ -48,7 +48,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Ravie", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(65, 106);
+            this.button2.Location = new System.Drawing.Point(66, 106);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button2.Size = new System.Drawing.Size(240, 40);
@@ -62,6 +62,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(372, 179);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -70,7 +71,7 @@
             this.Name = "FirstForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Library";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FirstForm_FormClosed);
             this.ResumeLayout(false);
 
         }

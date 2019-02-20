@@ -18,3 +18,4 @@ D:\PracticeWork\Library\bin\Debug\DataBaseLibrary.dll
 D:\PracticeWork\Library\bin\Debug\DataBaseLibrary.pdb
 D:\PracticeWork\Library\bin\Debug\DataBaseLibrary.dll.config
 D:\PracticeWork\Library\obj\Debug\Library.Registration.resources
+D:\PracticeWork\Library\obj\Debug\Library.MainWindow.resources

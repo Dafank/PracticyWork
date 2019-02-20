@@ -14,7 +14,7 @@ namespace Library
     {
         public FirstForm()
         {
-            InitializeComponent();           
+            InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,6 +29,11 @@ namespace Library
             Registration registration = new Registration(this);
             registration.Show();
             this.Visible =false;
+        }
+
+        private void FirstForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+﻿using DataBaseLibrary;
+using System;
 using System.Net.Mail;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DataBaseLibrary;
 
 namespace Library
 {
@@ -33,7 +26,7 @@ namespace Library
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (CheckNames(LastName.Text, FirstName.Text, MiddleName.Text)&CheckEmail(Email.Text)&CheckPassword(Password.Text))
+            if (CheckNames(LastName.Text, FirstName.Text, MiddleName.Text) & CheckEmail(Email.Text) & CheckPassword(Password.Text))
             {
                 AutentnData data = new AutentnData() { Email = Email.Text, Password = Password.Text };
                 db.UserInfoes.Add(new UserInfo
@@ -44,10 +37,11 @@ namespace Library
                     AutentnData = data
                 });
                 db.SaveChanges();
+                Hide();
             }
         }
 
-        public bool CheckNames(string last,string first,string middle)
+        private bool CheckNames(string last,string first,string middle)
         {
             errorLastName.Visible = false;
             errorFirstName.Visible = false;

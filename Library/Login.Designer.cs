@@ -42,7 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(79, 79);
+            this.label1.Location = new System.Drawing.Point(87, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(201, 22);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 123);
+            this.label2.Location = new System.Drawing.Point(44, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(244, 22);
             this.label2.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             this.Email.BackColor = System.Drawing.SystemColors.Window;
             this.Email.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Email.Location = new System.Drawing.Point(299, 79);
+            this.Email.Location = new System.Drawing.Point(307, 79);
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(178, 26);
             this.Email.TabIndex = 2;
@@ -70,7 +70,7 @@
             // Password
             // 
             this.Password.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Password.Location = new System.Drawing.Point(299, 123);
+            this.Password.Location = new System.Drawing.Point(307, 123);
             this.Password.Name = "Password";
             this.Password.PasswordChar = '*';
             this.Password.Size = new System.Drawing.Size(178, 26);
@@ -79,7 +79,7 @@
             // Login_button
             // 
             this.Login_button.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_button.Location = new System.Drawing.Point(198, 224);
+            this.Login_button.Location = new System.Drawing.Point(193, 224);
             this.Login_button.Name = "Login_button";
             this.Login_button.Size = new System.Drawing.Size(142, 35);
             this.Login_button.TabIndex = 4;
@@ -92,7 +92,7 @@
             this.emailError.AutoSize = true;
             this.emailError.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.emailError.ForeColor = System.Drawing.Color.Red;
-            this.emailError.Location = new System.Drawing.Point(195, 169);
+            this.emailError.Location = new System.Drawing.Point(196, 169);
             this.emailError.Name = "emailError";
             this.emailError.Size = new System.Drawing.Size(136, 16);
             this.emailError.TabIndex = 5;
@@ -104,7 +104,7 @@
             this.passwordError.AutoSize = true;
             this.passwordError.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.passwordError.ForeColor = System.Drawing.Color.Red;
-            this.passwordError.Location = new System.Drawing.Point(195, 196);
+            this.passwordError.Location = new System.Drawing.Point(184, 196);
             this.passwordError.Name = "passwordError";
             this.passwordError.Size = new System.Drawing.Size(160, 16);
             this.passwordError.TabIndex = 6;
@@ -115,7 +115,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(220, 27);
+            this.label3.Location = new System.Drawing.Point(213, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 36);
             this.label3.TabIndex = 7;
@@ -125,6 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(529, 275);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.passwordError);

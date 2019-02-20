@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DataBaseLibrary;
 using System.Net.Mail;
 using System.Data.Entity;
+using System.Threading;
 
 namespace Library
 {
@@ -17,13 +18,14 @@ namespace Library
     {
         Form previous;
         DataBaseModel db;
+        Thread main;
+        
         public Login(Form form)
         {
             InitializeComponent();
             previous = form;
             db = new DataBaseModel();
             FormClosed += Login_FormClosed;
-            
         }
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
@@ -37,9 +39,18 @@ namespace Library
             {
                 if (TryAuthorize(Email.Text, Password.Text))
                 {
-                    MessageBox.Show("HEllo");
+                    Dispose();
+                    main = new Thread(OpenMainForm);
+                    main.IsBackground = true;
+                    main.Start();
                 }
             }
+        }
+
+        private void OpenMainForm()
+        {
+            Application.Run(new MainWindow());
+            Environment.Exit(0);
         }
         private bool CheckEmail(string email)
         {
@@ -85,7 +96,7 @@ namespace Library
             }
             return true;
         }
-        public bool TryAuthorize(string email, string password)
+        private bool TryAuthorize(string email, string password)
         {
             if (db.AutentnDatas.Any(u => u.Email == email&u.Password == password))
             {
@@ -94,5 +105,6 @@ namespace Library
             MessageBox.Show("Email or Password not correct","User doesn't exist");
             return false;
         }
+
     }
 }
