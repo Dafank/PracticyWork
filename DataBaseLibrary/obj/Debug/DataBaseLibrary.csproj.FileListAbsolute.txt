@@ -9,4 +9,3 @@ D:\PracticeWork\DataBaseLibrary\obj\Debug\DataBaseLibrary.csproj.CoreCompileInpu
 D:\PracticeWork\DataBaseLibrary\obj\Debug\DataBaseLibrary.csproj.CopyComplete
 D:\PracticeWork\DataBaseLibrary\obj\Debug\DataBaseLibrary.dll
 D:\PracticeWork\DataBaseLibrary\obj\Debug\DataBaseLibrary.pdb
-D:\PracticeWork\DataBaseLibrary\obj\Debug\DataBaseLibrary.csprojAssemblyReference.cache
