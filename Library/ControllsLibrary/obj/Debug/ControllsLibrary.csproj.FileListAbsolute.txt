@@ -1,0 +1,6 @@
+D:\PracticeWork\Library\ControllsLibrary\bin\Debug\ControllsLibrary.dll
+D:\PracticeWork\Library\ControllsLibrary\bin\Debug\ControllsLibrary.pdb
+D:\PracticeWork\Library\ControllsLibrary\obj\Debug\ControllsLibrary.csprojAssemblyReference.cache
+D:\PracticeWork\Library\ControllsLibrary\obj\Debug\ControllsLibrary.csproj.CoreCompileInputs.cache
+D:\PracticeWork\Library\ControllsLibrary\obj\Debug\ControllsLibrary.dll
+D:\PracticeWork\Library\ControllsLibrary\obj\Debug\ControllsLibrary.pdb
