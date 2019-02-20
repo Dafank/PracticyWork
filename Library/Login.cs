@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataBaseLibrary;
 using System.Net.Mail;
+using System.Data.Entity;
 
 namespace Library
 {
@@ -22,6 +23,7 @@ namespace Library
             previous = form;
             db = new DataBaseModel();
             FormClosed += Login_FormClosed;
+            
         }
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
@@ -31,12 +33,12 @@ namespace Library
 
         private void Login_button_Click(object sender, EventArgs e)
         {
-
             if (CheckEmail(Email.Text) & CheckPassword(Password.Text))
             {
-                db.AutentnDatas.Add(new AutentnData { Email = Email.Text, Password = Password.Text });
-                db.SaveChanges();
-                // TODO: Тут має створюватись вікно, і має бути перевірка
+                if (TryAuthorize(Email.Text, Password.Text))
+                {
+                    MessageBox.Show("HEllo");
+                }
             }
         }
         private bool CheckEmail(string email)
@@ -82,6 +84,15 @@ namespace Library
                 return false;
             }
             return true;
+        }
+        public bool TryAuthorize(string email, string password)
+        {
+            if (db.AutentnDatas.Any(u => u.Email == email&u.Password == password))
+            {
+                return true;
+            }
+            MessageBox.Show("Email or Password not correct","User doesn't exist");
+            return false;
         }
     }
 }
